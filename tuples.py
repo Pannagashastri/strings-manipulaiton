@@ -24,7 +24,10 @@ if (type(tup1)==tuple):
 		print("11=exit")
 		rece=int(input("enter your choice: "))
 		if (rece==1):
-			val1=tuple(input("enter to create a list"))
+			val1=input("enter the tuple to create")
+			list=val1.split(",")
+			val1=tuple(list)
+			print(type(val1))
 			print(val1)
 		elif (rece==2):
 			print(tup1+tup2)
